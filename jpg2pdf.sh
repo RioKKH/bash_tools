@@ -41,7 +41,7 @@ split_vertial()
 
 make_pdf()
 {
-	local -r JPGLIST=$(ls ./*_hor.jpg)
+	local -r JPGLIST=$(ls ./*_hor-[01].jpg)
 	local -r FOUT=$1
 
 	convert "${JPGLIST}" "${FOUT}"
@@ -49,5 +49,6 @@ make_pdf()
 
 
 # main -----------------------------
-rotate_90degrees_CW
-split_horizontal
+#rotate_90degrees_CW
+#split_horizontal
+make_pdf output.pdf
