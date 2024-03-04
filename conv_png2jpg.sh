@@ -12,7 +12,8 @@ convert_png_to_jpg()
 		mkdir "${dst_dir}"
 	fi
 
-	for png_file in "${src_dir}"/*.png; do
+	for png_file in "${src_dir}"/*.PNG; do
+	#for png_file in "${src_dir}"/*.png; do
 		# 変換後のファイル名を作成する
 		# ##/は最長マッチするパターン"*/"を取り除く事を意味する。
 		# つまりファイル名のみを抽出するパターン
